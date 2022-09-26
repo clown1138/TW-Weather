@@ -1,6 +1,16 @@
 
 import styled from 'styled-components';
 
+export const MapSVG = styled.div`
+  stroke: white;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;}
+  path:hover {
+    fill: #B99362;
+    transform: translate(-5px,-5px);
+`;
+
 export const Title = styled.div`
   color: #B99362;
   padding-left: 10px;;
