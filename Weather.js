@@ -34,6 +34,7 @@ function App() {
   });
       const [citystated, setcitystated] = useState("臺北市")
       const [citystate, setcitystate] = useState("臺北")
+      //城市
       const City=(citynames)=>{
     const CityN = [
       {
@@ -135,7 +136,7 @@ function App() {
     fetchCurrentWeather(citystate);
     fetchWeatherForecast(citystated);
       }, [citystate,citystated]);
-
+      //天氣獲取
       const fetchCurrentWeather = (citystate) => {
     fetch(
       `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-507B37E0-0383-4D8C-878D-628B54EC3536&locationName=${citystate}`,
@@ -163,26 +164,29 @@ function App() {
         }));
       });
       };
+      //苗栗天氣
       const Miaoli = () => {
     fetch(
       `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-013?Authorization=CWB-507B37E0-0383-4D8C-878D-628B54EC3536`,
     )
       .then(response => response.json())
       .then(data=>
+        {const MiaoliWeather= data.records.locations[0].location[1];
         setWeatherElement(prevState => ({
             ...prevState,
-            locationName:    data.records.locations[0].location[1].locationName,
-            rainPossibility: data.records.locations[0].location[1].weatherElement[0].time[0].elementValue[0].value,
-            comfortability:  data.records.locations[0].location[1].weatherElement[5].time[0].elementValue[1].value,
-            weatherCode:     data.records.locations[0].location[1].weatherElement[1].time[0].elementValue[1].value,
-            description:     data.records.locations[0].location[1].weatherElement[1].time[0].elementValue[0].value,
-            windSpeed:       data.records.locations[0].location[1].weatherElement[8].time[0].elementValue[0].value,
-            temperature:     data.records.locations[0].location[1].weatherElement[3].time[0].elementValue[0].value,
-            humid:           data.records.locations[0].location[1].weatherElement[4].time[0].elementValue[0].value,
+            locationName:    MiaoliWeather.locationName,
+            rainPossibility: MiaoliWeather.weatherElement[0].time[0].elementValue[0].value,
+            comfortability:  MiaoliWeather.weatherElement[5].time[0].elementValue[1].value,
+            weatherCode:     MiaoliWeather.weatherElement[1].time[0].elementValue[1].value,
+            description:     MiaoliWeather.weatherElement[1].time[0].elementValue[0].value,
+            windSpeed:       MiaoliWeather.weatherElement[8].time[0].elementValue[0].value,
+            temperature:     MiaoliWeather.weatherElement[3].time[0].elementValue[0].value,
+            humid:           MiaoliWeather.weatherElement[4].time[0].elementValue[0].value,
         })
-              )  
+              )}  
         ); 
       }
+      //屏東＿蘭嶼＿綠島
       const Pingtung = (Nu) => {
         fetch(
             `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-037?Authorization=CWB-507B37E0-0383-4D8C-878D-628B54EC3536`
@@ -190,40 +194,44 @@ function App() {
           .then(response => response.json())
         //   .then(data=>console.log(data))
           .then(data=>
+            {const PingtungWeather=data.records.locations[0].location[Nu]
             setWeatherElement(prevState => ({
                 ...prevState,
-                locationName:    data.records.locations[0].location[Nu].locationName,
-                rainPossibility: data.records.locations[0].location[Nu].weatherElement[0].time[0].elementValue[0].value,
-                comfortability:  data.records.locations[0].location[Nu].weatherElement[5].time[0].elementValue[1].value,
-                weatherCode:     data.records.locations[0].location[Nu].weatherElement[1].time[0].elementValue[1].value,
-                description:     data.records.locations[0].location[Nu].weatherElement[1].time[0].elementValue[0].value,
-                windSpeed:       data.records.locations[0].location[Nu].weatherElement[8].time[0].elementValue[0].value,
-                temperature:     data.records.locations[0].location[Nu].weatherElement[3].time[0].elementValue[0].value,
-                humid:           data.records.locations[0].location[Nu].weatherElement[4].time[0].elementValue[0].value,
+                locationName:    PingtungWeather.locationName,
+                rainPossibility: PingtungWeather.weatherElement[0].time[0].elementValue[0].value,
+                comfortability:  PingtungWeather.weatherElement[5].time[0].elementValue[1].value,
+                weatherCode:     PingtungWeather.weatherElement[1].time[0].elementValue[1].value,
+                description:     PingtungWeather.weatherElement[1].time[0].elementValue[0].value,
+                windSpeed:       PingtungWeather.weatherElement[8].time[0].elementValue[0].value,
+                temperature:     PingtungWeather.weatherElement[3].time[0].elementValue[0].value,
+                humid:           PingtungWeather.weatherElement[4].time[0].elementValue[0].value,
             })
-                  )  
+                  )}  
             ); 
       }
+      //新竹
       const Hsinchu = () => {
         fetch(
           `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-053?Authorization=CWB-507B37E0-0383-4D8C-878D-628B54EC3536`,
         )
           .then(response => response.json())
           .then(data=>
+            {const HsinchuWeather=data.records.locations[0];
             setWeatherElement(prevState => ({
                 ...prevState,
-                locationName:    data.records.locations[0].locationsName,
-                rainPossibility: data.records.locations[0].location[1].weatherElement[0].time[0].elementValue[0].value,
-                comfortability:  data.records.locations[0].location[1].weatherElement[5].time[0].elementValue[1].value,
-                weatherCode:     data.records.locations[0].location[1].weatherElement[1].time[0].elementValue[1].value,
-                description:     data.records.locations[0].location[1].weatherElement[1].time[0].elementValue[0].value,
-                windSpeed:       data.records.locations[0].location[1].weatherElement[8].time[0].elementValue[0].value,
-                temperature:     data.records.locations[0].location[1].weatherElement[3].time[0].elementValue[0].value,
-                humid:           data.records.locations[0].location[1].weatherElement[4].time[0].elementValue[0].value,
+                locationName:    HsinchuWeather.locationsName,
+                rainPossibility: HsinchuWeather.location[1].weatherElement[0].time[0].elementValue[0].value,
+                comfortability:  HsinchuWeather.location[1].weatherElement[5].time[0].elementValue[1].value,
+                weatherCode:     HsinchuWeather.location[1].weatherElement[1].time[0].elementValue[1].value,
+                description:     HsinchuWeather.location[1].weatherElement[1].time[0].elementValue[0].value,
+                windSpeed:       HsinchuWeather.location[1].weatherElement[8].time[0].elementValue[0].value,
+                temperature:     HsinchuWeather.location[1].weatherElement[3].time[0].elementValue[0].value,
+                humid:           HsinchuWeather.location[1].weatherElement[4].time[0].elementValue[0].value,
             })
-                  )  
+                  )}  
             ); 
       }
+      //濕度
       const fetchWeatherForecast = (citystated) => {
         fetch(
           `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-507B37E0-0383-4D8C-878D-628B54EC3536&locationName=${citystated}`,
@@ -252,6 +260,7 @@ function App() {
         }));
       });
       };
+    
       const weatherget =()=>{
         fetchCurrentWeather(citystate);
         fetchWeatherForecast(citystated);
@@ -280,9 +289,9 @@ function App() {
           <Temperature>
             {weatherElement.temperature} <Celsius>°C</Celsius>
           </Temperature>
-          <WeatherIcon 
-            WeatherCode={weatherElement.weatherCode}
-            moment="night"/>
+            <WeatherIcon 
+              WeatherCode={weatherElement.weatherCode}
+              moment="night"/>
         </CurrentWeather>
 
         <AirFlow>
