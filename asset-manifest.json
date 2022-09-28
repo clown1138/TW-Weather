@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TW-Weather/static/css/main.1b1fa96a.css",
+    "main.js": "/TW-Weather/static/js/main.6ae1b2fb.js",
+    "static/media/cloudy-fog.svg": "/TW-Weather/static/media/cloudy-fog.0ed432d9caa89a6157fc552de541d7ca.svg",
+    "static/media/cloudy-with-rain.svg": "/TW-Weather/static/media/cloudy-with-rain.6afe993a1fe36dfe56be96fc6d217f00.svg",
+    "static/media/night-rain.svg": "/TW-Weather/static/media/night-rain.e45d055a6fa724437116b4474468aeae.svg",
+    "static/media/night-cloudy.svg": "/TW-Weather/static/media/night-cloudy.00520390112bf6ab4725ed66e46596e5.svg",
+    "static/media/humid.svg": "/TW-Weather/static/media/humid.ae586d9e928ca6244c3e6fa39460237d.svg",
+    "static/media/rain.svg": "/TW-Weather/static/media/rain.8e10718e150267e9dc74f9cde4f669ea.svg",
+    "static/media/clear.svg": "/TW-Weather/static/media/clear.8857a9c17ded7f694ed227635f2939fa.svg",
+    "static/media/refresh.svg": "/TW-Weather/static/media/refresh.e352fc8bae35a5d76241e0bd9ec1d4c5.svg",
+    "static/media/windy.svg": "/TW-Weather/static/media/windy.93b49bb5f452a711b4783afb6e683672.svg",
+    "static/media/night-clear.svg": "/TW-Weather/static/media/night-clear.94eb7d671bc6d4dec6aa0b47038954df.svg",
+    "index.html": "/TW-Weather/index.html",
+    "main.1b1fa96a.css.map": "/TW-Weather/static/css/main.1b1fa96a.css.map",
+    "main.6ae1b2fb.js.map": "/TW-Weather/static/js/main.6ae1b2fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b1fa96a.css",
+    "static/js/main.6ae1b2fb.js"
+  ]
+}
