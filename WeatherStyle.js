@@ -1,11 +1,34 @@
 
 import styled from 'styled-components';
+import hide from './Weather';
+export const Weatherbody = styled.div`
+height: 580px;
+width:800px;
+margin:auto;
+display:flex;
+`;
+
+export const Weathershow = styled.div`
+height: 580px;
+width:400px;
+color: white;
+font-size: 30px;
+float:right;
+@media (max-width: 400px) {
+  display:${props=>props.ishide===true ? "none" : " "};
+  position:absolute;
+  z-index:100;
+}
+`;
 
 export const MapSVG = styled.div`
+margin:0px;
+  height: 580px;
+  width:400px;
   stroke: white;
   fill: transparent;
   transition: 0.5s;
-  cursor: pointer;}
+  cursor: pointer;
   path:hover {
     fill: #B99362;
     transform: translate(-5px,-5px);

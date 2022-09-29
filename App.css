@@ -15,13 +15,12 @@ body
   width: 930px;
 }
 
-  .title_area
+  /* .title_area
   {position: absolute;
     height: 100vh;
   right: 20px;
   top: 20px;
-  color: white;
-  font-size: 30px;}
+  } */
 
 h1
   span

@@ -6,7 +6,7 @@ import { ReactComponent as RainIcon } from './WeatherSVG/rain.svg';
 import { ReactComponent as WindyIcon } from './WeatherSVG/windy.svg';
 import { ReactComponent as HumidIcon } from './WeatherSVG/humid.svg';
 import { ReactComponent as RefreshIcon } from './WeatherSVG/refresh.svg';
-import {Title ,WeatherCard , Location ,Description ,CurrentWeather ,Temperature ,Celsius ,AirFlow ,Rain ,Humid, Redo 
+import {Weatherbody, Weathershow, Title ,WeatherCard , Location ,Description ,CurrentWeather ,Temperature ,Celsius ,AirFlow ,Rain ,Humid, Redo 
 } from './WeatherStyle'
 
 
@@ -34,6 +34,7 @@ function App() {
   });
       const [citystated, setcitystated] = useState("臺北市")
       const [citystate, setcitystate] = useState("臺北")
+      const [hide, setHide] = useState(true)
       //城市
       const City=(citynames)=>{
     const CityN = [
@@ -129,8 +130,11 @@ function App() {
     setWeatherElement(prevState => ({
       ...prevState,
       locationName: NewCity.cityName,
- 
     }))
+    setHide(!hide)
+      }
+      const Hideornot=()=>{
+          setHide(!hide)
       }
       useEffect(() => {
     fetchCurrentWeather(citystate);
@@ -267,14 +271,13 @@ function App() {
       }
   return (
     
-      <div className='body-weather'> 
+    <Weatherbody> 
         <Map City={(citynames)=>City(citynames)} 
              weatherget={weatherget} 
              Hsinchu={Hsinchu} 
              Miaoli={Miaoli}
              Pingtung={(Nu)=>Pingtung(Nu)}/>
-      <div className="title_area">
-
+      <Weathershow onClick={Hideornot} ishide={hide}>
     <Title>Taiwan<span>///</span>
       <br />Weather Map<br /></Title>
       <WeatherCard>
@@ -312,8 +315,8 @@ function App() {
           <RefreshIcon />
         </Redo>
       </WeatherCard>
-</div>
-    </div>
+      </Weathershow>
+    </Weatherbody>
   );
 }
 
