@@ -6,6 +6,10 @@ height: 580px;
 width:800px;
 margin:auto;
 display:flex;
+@media (max-width: 450px) {
+  width:95%;
+  height:auto;
+}
 `;
 
 export const Weathershow = styled.div`
@@ -14,10 +18,12 @@ width:400px;
 color: white;
 font-size: 30px;
 float:right;
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   display:${props=>props.ishide===true ? "none" : " "};
   position:absolute;
   z-index:100;
+  width:95%;
+  height:auto;
 }
 `;
 
@@ -32,6 +38,8 @@ margin:0px;
   path:hover {
     fill: #B99362;
     transform: translate(-5px,-5px);
+    width:95%;
+    height:auto;
 `;
 
 export const Title = styled.div`
