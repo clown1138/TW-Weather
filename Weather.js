@@ -189,6 +189,8 @@ function App() {
         })
               )}  
         ); 
+    setHide(!hide)
+
       }
       //屏東＿蘭嶼＿綠島
       const Pingtung = (Nu) => {
@@ -212,6 +214,8 @@ function App() {
             })
                   )}  
             ); 
+    setHide(!hide)
+
       }
       //新竹
       const Hsinchu = () => {
@@ -234,6 +238,8 @@ function App() {
             })
                   )}  
             ); 
+    setHide(!hide)
+
       }
       //濕度
       const fetchWeatherForecast = (citystated) => {
