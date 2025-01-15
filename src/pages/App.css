@@ -1,0 +1,42 @@
+
+
+*{
+  font-family: 'Fjalla One'
+}
+svg
+  {height: 580px;
+    width:407px;}
+body
+  {
+    background-color: rgb(46, 45, 45)
+  }
+.body-weather{
+  height: 580px;
+  width: 930px;
+}
+
+  /* .title_area
+  {position: absolute;
+    height: 100vh;
+  right: 20px;
+  top: 20px;
+  } */
+
+h1
+  span
+    {
+      color: #B99362;
+    padding-left: 10px;}
+    
+  
+hr{
+  width: 100px;
+  margin-left: 0;
+  border: none;
+  border-bottom: solid 2px white;}
+  
+.forcast
+  h2,h4,h5
+    {margin: 0}
+  h2
+    {margin-top: 20px}
