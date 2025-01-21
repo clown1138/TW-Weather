@@ -6,7 +6,7 @@ import { ReactComponent as CloudyWithRainIcon } from './WeatherSVG/cloudy-with-r
 import { ReactComponent as NightWithMoonIcon } from './WeatherSVG/night-clear.svg';
 import { ReactComponent as NightWithcloudyIcon } from './WeatherSVG/night-cloudy.svg';
 import { ReactComponent as NightWithRainIcon } from './WeatherSVG/night-rain.svg';
-import {IconContainer} from './WeatherStyle';
+import {IconContainer} from '../styles/WeatherStyle';
 
 
 const weatherTypes = {

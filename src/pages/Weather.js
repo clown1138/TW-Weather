@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+// import styles from '../styles/App.module.css';
 import Map from './Map' 
 import WeatherIcon from './WeatherIcon';
 import { ReactComponent as RainIcon } from './WeatherSVG/rain.svg';
@@ -7,7 +7,7 @@ import { ReactComponent as WindyIcon } from './WeatherSVG/windy.svg';
 import { ReactComponent as HumidIcon } from './WeatherSVG/humid.svg';
 import { ReactComponent as RefreshIcon } from './WeatherSVG/refresh.svg';
 import {Weatherbody, Weathershow, Title ,WeatherCard , Location ,Description ,CurrentWeather ,Temperature ,Celsius ,AirFlow ,Rain ,Humid, Redo 
-} from './WeatherStyle'
+} from '../styles/WeatherStyle'
 
 
 

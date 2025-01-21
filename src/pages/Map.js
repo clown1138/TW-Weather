@@ -1,4 +1,4 @@
-import {MapSVG} from './WeatherStyle';
+import {MapSVG} from '../styles/WeatherStyle';
 
 
 const Map =({City,Hsinchu,Miaoli,Pingtung})=>{

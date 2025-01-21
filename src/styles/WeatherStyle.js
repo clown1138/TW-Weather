@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import hide from './Weather';
+import hide from '../pages/Weather';
 export const Weatherbody = styled.div`
 height: 580px;
 width:800px;
