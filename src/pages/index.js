@@ -132,7 +132,7 @@ console.log(selectedSize)
 ></iframe>
  */}
 
-<h2  style={{color:"#fff"}}>300*250</h2>
+<h2  style={{color:"#fff"}}>300*250_滑動多圖</h2>
 
 {/* <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/760/index.html" 
@@ -149,6 +149,7 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe> */}
+
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/762/index.html" 
   width="300px" 
@@ -156,13 +157,13 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe>
-<iframe 
+{/* <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/763/index.html" 
   width="300px" 
   height="250px" 
   style={{ border: "none" }} 
   allowFullScreen
-></iframe>
+></iframe> */}
  {/*
 <h2 style={{color:"#fff"}}>320*480</h2>
 
@@ -259,36 +260,36 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe> */}
-      <h2 style={{color:"#fff"}}>970*250</h2>
+        {/* <h2 style={{color:"#fff"}}>970*250</h2>
 
-        <iframe 
-          src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
-          width="970px" 
-          height="250px" 
-          style={{ border: "none" }} 
-          allowFullScreen
-        ></iframe>
-<iframe 
-          src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/757/index.html" 
-          width="970px" 
-          height="250px" 
-          style={{ border: "none" }} 
-          allowFullScreen
-        ></iframe>
-        <iframe 
-          src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/758/index.html" 
-          width="970px" 
-          height="250px" 
-          style={{ border: "none" }} 
-          allowFullScreen
-        ></iframe>
-        <iframe 
-          src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/759/index.html" 
-          width="970px" 
-          height="250px" 
-          style={{ border: "none" }} 
-          allowFullScreen
-        ></iframe>
+          <iframe 
+            src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
+            width="970px" 
+            height="250px" 
+            style={{ border: "none" }} 
+            allowFullScreen
+          ></iframe>
+  <iframe 
+            src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/757/index.html" 
+            width="970px" 
+            height="250px" 
+            style={{ border: "none" }} 
+            allowFullScreen
+          ></iframe>
+          <iframe 
+            src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/758/index.html" 
+            width="970px" 
+            height="250px" 
+            style={{ border: "none" }} 
+            allowFullScreen
+          ></iframe>
+          <iframe 
+            src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/759/index.html" 
+            width="970px" 
+            height="250px" 
+            style={{ border: "none" }} 
+            allowFullScreen
+          ></iframe> */}
       </div>
      
     </div>
