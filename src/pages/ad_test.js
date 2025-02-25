@@ -37,7 +37,7 @@ console.log(selectedSize)
   return (
     <div>
       <div>
-      <h2 style={{color:"#fff"}}>200*200</h2>
+      {/* <h2 style={{color:"#fff"}}>200*200</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -257,7 +257,7 @@ console.log(selectedSize)
   height="250px" 
   style={{ border: "none" }} 
   allowFullScreen
-></iframe>
+></iframe> */}
       <h2 style={{color:"#fff"}}>970*250</h2>
 
         <iframe 
