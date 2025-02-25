@@ -134,7 +134,7 @@ console.log(selectedSize)
 
 <h2>300*250</h2>
 
-<iframe 
+{/* <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/760/index.html" 
   
   width="300px" 
@@ -148,7 +148,7 @@ console.log(selectedSize)
   height="250px" 
   style={{ border: "none" }} 
   allowFullScreen
-></iframe>
+></iframe> */}
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/762/index.html" 
   width="300px" 
