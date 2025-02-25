@@ -132,7 +132,7 @@ console.log(selectedSize)
 ></iframe>
  */}
 
-<h2>300*250</h2>
+<h2  style={{color:"#fff"}}>300*250</h2>
 
 {/* <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/760/index.html" 
