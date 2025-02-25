@@ -37,7 +37,7 @@ console.log(selectedSize)
   return (
     <div>
       <div>
-      <h2>200*200</h2>
+      <h2 style={{color:"#fff"}}>200*200</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -68,7 +68,7 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe>
-<h2>300*50</h2>
+<h2 style={{color:"#fff"}}>300*50</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -99,7 +99,7 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe>
-<h2>320*50</h2>
+<h2 style={{color:"#fff"}}>320*50</h2>
 
 <iframe 
   src="https://rmn-creative.ad2iction.com/creative/742/index.html" 
@@ -131,7 +131,7 @@ console.log(selectedSize)
   allowFullScreen
 ></iframe>
 
-<h2>300*250</h2>
+<h2 style={{color:"#fff"}}>300*250</h2>
 
 <iframe 
   src="https://rmn-creative.ad2iction.com/creative/737/index.html" 
@@ -163,7 +163,7 @@ console.log(selectedSize)
   allowFullScreen
 ></iframe>
 
-<h2>320*480</h2>
+<h2 style={{color:"#fff"}}>320*480</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -195,7 +195,7 @@ console.log(selectedSize)
   allowFullScreen
 ></iframe>
 
-<h2>336*280</h2>
+<h2 style={{color:"#fff"}}>336*280</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -227,7 +227,7 @@ console.log(selectedSize)
   allowFullScreen
 ></iframe>
 
-<h2>250*250</h2>
+<h2 style={{color:"#fff"}}>250*250</h2>
 
 <iframe 
   src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
@@ -258,7 +258,7 @@ console.log(selectedSize)
   style={{ border: "none" }} 
   allowFullScreen
 ></iframe>
-      <h2>970*250</h2>
+      <h2 style={{color:"#fff"}}>970*250</h2>
 
         <iframe 
           src="https://storage.googleapis.com/stage_rmn_dsp_dco_m1wki4g3r3/creative/756/index.html" 
